@@ -6,11 +6,11 @@ body {
   background: #fafafa;
 }
 a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
-/* HEADER */
+/* --------------------HEADER-------------------- */
 
 .header-wrapper {
   width: 100%;
@@ -59,49 +59,59 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  color: red;
   text-align: center;
+  outline: none;
 }
 
 .shortcuts a {
   margin-left: 12px;
+  color: #262626;
 }
 
-/* RESTO */
+/* --------------------BIG GUYS-------------------- */
 
 .container {
   margin-top: 54px;
-  background: yellowgreen;
+
   width: 935px;
-  height: 10000px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   top: 88px;
   position: relative;
-  display: flex;
 }
 .main {
-  background: turquoise;
   width: 614px;
-  height: 700px;
 }
+
+.main-blank {
+  width: 321px;
+  height: 100%;
+  background: #fafafa;
+}
+
+/* --------------------STORIES-------------------- */
+
 .stories-wrapper {
-  background: pink;
+  background: #ffffff;
   height: 118px;
   width: 100%;
   display: flex;
   overflow-x: hidden;
   align-items: center;
-  padding-left: 18px;
+  padding-left: 11px;
   position: relative;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
 }
 .arrow {
   position: absolute;
   z-index: 1;
   right: 8px;
+  box-shadow: -1px 1px 3px rgb(37, 37, 37);
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .story {
@@ -111,33 +121,223 @@ a {
   font-size: 12px;
   line-height: 15px;
   position: relative;
-  margin-right: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+  width: 80px;
 }
 .story-background {
   width: 66px;
   height: 66px;
   border-radius: 35px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 .story-image {
+  transform: translate(-50%, 0);
   width: 56px;
   height: 56px;
-  left: 5px;
+  left: 50%;
   top: 5px;
   position: absolute;
 }
-
-.main-blank {
-  width: 321px;
-  height: 10000px;
-  background: yellow;
-  background: #fafafa;
+.story p {
+  overflow-x: hidden;
+  width: calc(100% - 4px);
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 3px;
+  margin-right: 1px;
 }
 
+/* --------------------POSTS-------------------- */
+
+.post-wrapper {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  border: 1px solid #dbdbdb;
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+}
+.post-wrapper video {
+  background: #262626;
+}
+.post-header {
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-header ion-icon {
+  cursor: pointer;
+  margin-right: 18.5px;
+}
+.post-header-author {
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+}
+.post-header-author-img {
+  width: 32px;
+  height: 32px;
+}
+.post-header-author-name {
+  top: 21px;
+  left: 64px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+  margin-left: 15px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-top: 14px;
+  letter-spacing: -10px;
+}
+.post-footer-actions ion-icon {
+  margin-left: 14px;
+  cursor: pointer;
+}
+.bookmark {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.post-likes {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.post-heart {
+  font-size: 24px;
+}
+.post-likes img {
+  width: 20px;
+  height: 20px;
+  margin-left: 14px;
+  margin-right: 5px;
+}
+.post-likes a {
+  font-weight: 600;
+}
+.post-link-space {
+  margin: 0 3px;
+}
+
+/* --------------------SIDEBAR-------------------- */
+
 .sidebar {
-  background: tomato;
+  background: #fafafa;
   width: 293px;
-  height: 10000px;
+  height: 100%;
   position: fixed;
   left: calc(50% + 174.5px);
   top: 88px;
+  padding-top: 23px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+/* -SIDEBAR-HEADER- */
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+}
+.sidebar-header-writing {
+  margin-left: 17px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+.sidebar-header-writing a {
+  color: #262626;
+}
+.account {
+  font-weight: 600;
+}
+
+/* -SIDEBAR-SUGGESTIONS- */
+
+.suggestions-header {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 17px;
+  justify-content: space-between;
+}
+.suggestions-header a {
+  font-weight: 600;
+  color: #262626;
+}
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.suggestion p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #139ef2;
+  cursor: pointer;
+}
+.suggestion-right {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-image {
+  width: 32px;
+  height: 32px;
+}
+.suggestion-right-writing {
+  margin-left: 11px;
+}
+.suggestion-right-writing a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+.suggestion-right-writing p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+  margin-top: 6px;
+  cursor: default;
+}
+/* -SIDEBAR-FOOTER- */
+
+.sidebar-footer {
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 33px;
+  margin-bottom: 18px;
+  color: #c7c7c7;
+  width: 297px;
+}
+.sidebar-footer a {
+  color: #c7c7c7;
+}
+.fixer {
+  margin-top: 0px;
+}
+
+/* --------------------935PX RESPONSIVE SCREEN-------------------- */
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+  .main-blank {
+    display: none;
+  }
+  .main {
+    align-items: center;
+    justify-content: center;
+  }
 }
