@@ -20,7 +20,7 @@ a {
   position: fixed;
   border-bottom: 1px solid #dbdbdb;
   background: #ffffff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header {
@@ -96,6 +96,12 @@ a {
   align-items: center;
   padding-left: 18px;
   position: relative;
+}
+.arrow {
+  position: absolute;
+  z-index: 1;
+  right: 8px;
+  border-radius: 50px;
 }
 
 .story {
