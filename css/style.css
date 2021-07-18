@@ -35,8 +35,8 @@ a {
 
 .logo-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 150px;
 }
 
 .logo-wrapper img {
@@ -57,8 +57,6 @@ a {
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 12px;
   text-align: center;
   outline: none;
@@ -67,6 +65,15 @@ a {
 .shortcuts a {
   margin-left: 12px;
   color: #262626;
+}
+.fix-header {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.fix-header1 {
+  height: 1px;
+  width: 1px;
 }
 
 /* --------------------BIG GUYS-------------------- */
@@ -100,10 +107,10 @@ a {
   display: flex;
   overflow-x: hidden;
   align-items: center;
-  padding-left: 11px;
   position: relative;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
+  padding-left: 4px;
 }
 .arrow {
   position: absolute;
@@ -123,14 +130,13 @@ a {
   position: relative;
   font-family: "Roboto", sans-serif;
   color: #262626;
-  width: 80px;
+  width: 70px;
+  margin: 0 7px;
 }
 .story-background {
   width: 66px;
   height: 66px;
-  border-radius: 35px;
-  margin-left: 7px;
-  margin-right: 7px;
+  border-radius: 50px;
 }
 .story-image {
   transform: translate(-50%, 0);
@@ -142,11 +148,10 @@ a {
 }
 .story p {
   overflow-x: hidden;
-  width: calc(100% - 4px);
+  width: calc(100% + 6px);
   text-overflow: ellipsis;
   text-align: center;
   margin-top: 3px;
-  margin-right: 1px;
 }
 
 /* --------------------POSTS-------------------- */
@@ -180,6 +185,7 @@ a {
 .post-header-author-img {
   width: 32px;
   height: 32px;
+  border-radius: 50px;
 }
 .post-header-author-name {
   top: 21px;
@@ -212,6 +218,7 @@ a {
   line-height: 16px;
   margin-top: 13px;
   margin-bottom: 13px;
+  padding-left: 14px;
 }
 .post-heart {
   font-size: 24px;
@@ -219,14 +226,12 @@ a {
 .post-likes img {
   width: 20px;
   height: 20px;
-  margin-left: 14px;
-  margin-right: 5px;
 }
 .post-likes a {
   font-weight: 600;
 }
-.post-link-space {
-  margin: 0 3px;
+.post-likes p {
+  margin-left: 5px;
 }
 
 /* --------------------SIDEBAR-------------------- */
@@ -326,7 +331,12 @@ a {
 .fixer {
   margin-top: 0px;
 }
-
+.mobile-footer {
+  display: none;
+}
+.bottom-fixer {
+  display: none;
+}
 /* --------------------935PX RESPONSIVE SCREEN-------------------- */
 
 @media (max-width: 935px) {
@@ -348,10 +358,12 @@ a {
     padding-right: 20px;
     padding-left: 20px;
   }
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
+
+  .bottom-fixer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background: #fafafa;
   }
 }
 
@@ -374,5 +386,42 @@ a {
   }
   .container {
     top: 54px;
+  }
+  .mobile-trash {
+    display: none;
+  }
+  .shortcuts a {
+    margin-left: 0px;
+  }
+  .mobile-footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    bottom: 0px;
+    right: 0px;
+    background: #ffffff;
+    border-top: 1px solid #dbdbdb;
+    padding: 0 17px;
+    font-size: 23px;
+  }
+  .logo-wrapper img {
+    display: none;
+  }
+  .logo-separator {
+    display: none;
+  }
+  .header {
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: unset;
   }
 }
