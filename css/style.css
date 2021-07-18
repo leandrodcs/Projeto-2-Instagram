@@ -208,7 +208,7 @@ a {
   cursor: pointer;
 }
 .bookmark {
-  margin-right: 16px;
+  margin-right: 14px;
   cursor: pointer;
 }
 .post-likes {
@@ -217,7 +217,6 @@ a {
   font-size: 14px;
   line-height: 16px;
   margin-top: 13px;
-  margin-bottom: 13px;
   padding-left: 14px;
 }
 .post-heart {
@@ -232,6 +231,76 @@ a {
 }
 .post-likes p {
   margin-left: 5px;
+}
+.comments-header {
+  padding-left: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #c7c7c7;
+}
+.comments-header a {
+  color: #c7c7c7;
+}
+.comments {
+  padding-left: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 14px;
+}
+.comment {
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.comment ion-icon {
+  cursor: pointer;
+}
+.comment-author {
+  font-weight: 600;
+}
+.comment-time {
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+.comment-time a {
+  color: #c7c7c7;
+}
+.tags {
+  font-weight: normal;
+  color: #139ef2;
+}
+.add-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 14px;
+  border-top: 1px solid #dbdbdb;
+  height: 55px;
+}
+.add-comment-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+}
+.add-comment-left ion-icon {
+  cursor: pointer;
+}
+.add-comment-left input {
+  border: 1px solid #ffffff;
+  width: 480px;
+  height: 54px;
+  outline: none;
+  font-size: 18px;
+}
+.add-comment-right {
+  cursor: pointer;
+  color: #b2dffc;
+}
+.add-comment-right:hover {
+  color: #0095f6;
+  transition: 300ms;
 }
 
 /* --------------------SIDEBAR-------------------- */
