@@ -365,6 +365,11 @@ a {
     height: 30px;
     background: #fafafa;
   }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 /* --------------------614PX RESPONSIVE SCREEN-------------------- */
