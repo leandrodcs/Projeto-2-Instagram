@@ -303,6 +303,7 @@ a {
 .add-comment-right {
   cursor: pointer;
   color: #b2dffc;
+  font-size: 14px;
 }
 .add-comment-right:hover {
   color: #0095f6;
@@ -497,6 +498,9 @@ a {
     font-size: 25px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .arrow {
+    display: none;
   }
 
   html,
