@@ -354,3 +354,25 @@ a {
     overflow-x: hidden;
   }
 }
+
+/* --------------------614PX RESPONSIVE SCREEN-------------------- */
+
+@media (max-width: 614px) {
+  .stories-wrapper {
+    background: #fafafa;
+    height: 121px;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    padding-left: 11px;
+    position: relative;
+    border: none;
+  }
+  .post-wrapper {
+    margin-top: 0;
+  }
+  .container {
+    top: 54px;
+  }
+}
